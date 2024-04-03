@@ -1,4 +1,3 @@
-# SRAOD-Super-Resolution-Assisted-Object-Detection-in-Multimodal-Remote-Sensing-Imagery
 Project Overview:
 This project focuses on implementing a machine learning model for object detection in multimodal remote sensing imagery. The approach involves training various models such as YOLOv5S, YOLOv5M, YOLOv5L, YOLOv5X, YOLOv5x6, YOLOv3, YOLOv4, and a hybrid algorithm called Super Yolo for object detection. Additionally, a super resolution branch is utilized to enhance the resolution of low-resolution input images. The resulting images display the confident scores of detected objects.
 Technologies Used:
@@ -8,6 +7,10 @@ Technologies Used:
 4.	HTML
 5.	CSS
 6.	JavaScript
+
+
+
+
 Module Running:
 Open the anaconda prompt 3 
 Navigate to the project directory: cd SRAOD-Super Resolution Assisted Object Detection in Multimodal Remote Sensing Imagery
@@ -18,6 +21,9 @@ Input image data: Upload the image in the form of JPEG/JPG
 Displaying output: Output image is displayed with the confident score of each object present in that image
 Run Jupyter Notebook: jupyter notebook
 Open and execute the notebooks for training the models and implementing object detection with super resolution.
+
+
+
 
 Workflow:
 Data Preparation:
@@ -40,6 +46,10 @@ Evaluation:
 1.	Evaluate the performance of the trained model using appropriate metrics. Such as Confusion Matrix, Precision graph, recall graph, F1 Score and Performance evaluation of all the objects. 
 2.	Fine-tune the model parameters for better accuracy and efficiency.
 
+
+
+
+
 Setup Instructions:
 Install Anaconda:
 Download and install Anaconda, a package manager, and virtual environment manager for Python.
@@ -52,9 +62,10 @@ Obtain multimodal remote sensing imagery datasets containing objects for trainin
 Run Jupyter Notebook:
 Launch Jupyter Notebook and open the project notebook to access the code and execute the workflow steps.
 Execute Code Cells:
-
 Execute each code cell in the Jupyter Notebook sequentially to preprocess data, train the model, implement super resolution, perform object detection, and visualize results.
 Interpret Results:
 Analyse the results displayed in the output to evaluate the performance of the object detection model and the super resolution technique.
+
+
 Conclusion:
 The Super Resolution based Object Detection in Multimodal Remote Sensing Imagery project aims to enhance the accuracy of small object detection in remote sensing imagery by incorporating super resolution techniques. By following the provided workflow and setup instructions, users can implement and evaluate the proposed solution effectively.
