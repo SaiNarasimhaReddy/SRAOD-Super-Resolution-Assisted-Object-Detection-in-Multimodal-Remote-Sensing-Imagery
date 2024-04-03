@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Home</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+  <!-- font awesome style -->
+  <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="header_top">
+        
+      </div>
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="#">
+              <span>
+                SRAOD
+              </span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/index">Home </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/about">About </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="/notebook">Notebook </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/login"> Signout</a>
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-md-6 ">
+            <div class="detail-box">
+              <h1>
+                Welcome<br>
+                to Dashbaord <br>
+                
+              </h1>
+              <p>
+                SRAOD: Super Resolution based Object Detection in Multimodal Remote Sensing Imagery
+              </p>
+              
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-box">
+              <img src="static/12.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding-bottom">
+    <div class="container">
+      <div class="row">
+    
+            <form class="form-signin" action="/predict" method=post enctype=multipart/form-data>
+                <h1 class="h3 mb-3 font-weight-normal">Upload any image</h1>
+                <input type="file" name="file" class="form-control-file" id="inputfile">
+                <br/>
+                <button style="width: 500px;" class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+                
+            </form>
+            <script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+            <script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+            <script type="text/javascript">
+            $('#inputfile').bind('change', function() {
+                let fileSize = this.files[0].size/1024/1024; // this gives in MB
+                if (fileSize > 10) {
+                    $("#inputfile").val(null);
+                    alert('file is too big. images more than 10MB are not allowed')
+                    return
+                }
+
+                let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+                if($.inArray(ext, ['jpg','jpeg','png']) == -1) {
+                    $("#inputfile").val(null);
+                    alert('only jpeg/jpg files are allowed!');
+                }
+            });
+            </script>
+        </body>
+        </html>
+
+        <!DOCTYPE html>
+        <html>
+
+
+        <body>
+        
+            <div>
+            
+            
+<!--
+        <img style="width: 350px;height: 350px;margin-left: 15%;margin-top: 10%;" src="{{ url_for('video') }}" />
+-->
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- end about section -->
+
+
+<!-- end info_section -->
+
+<!-- footer section -->
+<footer class="footer_section">
+<div class="container">
+
+</div>
+</footer>
+<!-- footer section -->
+
+<script src="static/js/jquery-3.4.1.min.js"></script>
+<script src="static/js/bootstrap.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</script>
+<script src="static/js/custom.js"></script>
+<!-- Google Map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+<!-- End Google Map -->
+
+
+</body>
+
+</html>
